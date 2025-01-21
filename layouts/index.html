@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <article class="cf ph3 ph4-l pv3 pv4-l f4 mw8 center lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
+  <article class="cf ph3 ph4-ns pv3 f4 mw8 center lh-copy {{ $.Param "text_color" | default "gray" }}">
     {{ $resumePage := .Site.GetPage "/resume" }}
     {{ if $resumePage }}
       <h1>{{ $resumePage.Title }}</h1>
